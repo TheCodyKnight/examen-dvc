@@ -1,0 +1,7 @@
+[core]
+    remote = origin
+['remote "origin"']
+    url = https://dagshub.com/TheCodyKnight/examen-dvc.dvc
+    auth = basic
+    user = thecodyknight
+    password = 3559717a1c281e25f1e210a9a79dfd5dec6a20ad
