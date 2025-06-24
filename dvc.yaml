@@ -36,13 +36,13 @@ stages:
     - models/data/best_params.pkl
     - src/4_model_training.py
     outs:
-    - models/models/trained_model.pkl
+    - models/models/regressor.pkl
   evaluate_model:
     cmd: python src/5_model_evaluating.py
     deps:
     - data/processed/X_test_scaled.csv
     - data/processed/y_test.csv
-    - models/models/trained_model.pkl
+    - models/models/regressor.pkl
     - src/5_model_evaluating.py
     outs:
     - metrics/scores.json
